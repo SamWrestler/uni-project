@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      .bg-opacity-50::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        opacity: 0.8;
+        z-index: 1;
+      }
+      .swiper {
+        width: 240px;
+        height: 430px;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+      .swiper-slide {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 18px;
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        gap: 1rem;
+      }
+      
+    </style>
+  </head>
+  <body class="font-iransans box-border">
+    <section class="flex flex-col gap-10 justify-center bg-opacity-50 items-center bg-[url('./public/images/bg.jpg')] h-screen bg-cover bg-no-repeat">
+      <div class="container mx-auto z-10 flex flex-col justify-center items-center gap-5">
+        <h1 class="text-white font-bold text-[2rem] sm:text-[2.25rem] md:text-[2.5rem] lg:text-[2.75rem]">پلتفرم</h1>
+        <p class="text-white font-thin text-[1.5em] sm:text-[1.75rem] md:text-[2rem] lg:text-[2.25rem]">تصاعدی در موفق شما</p>
+      </div>
+      <a href="#" class="px-[4rem] py-[1rem] sm:text-[1.25rem] sm:px-[4.75rem] sm:py-[1.15rem] md:px-[5rem] md:py-[1.25rem] lg:px-[7rem] lg:py-[1.5rem] rounded-xl transition-all duration-200 hover:bg-green-700 z-10 text-white bg-green-500">داشبورد</a>
+    </section>
+    
+    <section class="container mx-auto  flex flex-col gap-10 px-[1rem] py-[1.5rem] md:grid md:grid-cols-2" dir="rtl">
+      <div class="md:hidden">
+        <h2 class="text-[1.25rem] sm:text-[1.5rem]">نظرات شما</h2>
+        <hr>
+      </div>
+      <div class="swiper mySwiper items-center h-[320px] md:scale-115 lg:scale-120 xl:scale-125 md:col-start-2 md:row-start-1 md:col-span-1 mt-10 mb-10">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide pt-[1rem] bg-slate-600">
+            <img src="./public/images/profile.jpg" alt="" class="w-[6rem] h-[6rem] rounded-full object-cover">
+            <p class="mx-10 h-10 text-[1rem] font-light text-pretty leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله</p>
+          </div>
+          <div class="swiper-slide pt-[1rem] bg-slate-600">
+            <img src="./public/images/profile2.jpg" alt="" class="w-[6rem] h-[6rem] rounded-full object-cover">
+            <p class="mx-10 h-10 text-[1rem] font-light text-pretty leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله</p>
+          </div>
+          <div class="swiper-slide pt-[1rem] bg-slate-600">
+            <img src="./public/images/profile3.jpg" alt="" class="w-[6rem] h-[6rem] rounded-full object-cover">
+            <p class="mx-10 h-10 text-[1rem] font-light text-pretty leading-relaxed">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-col items-center md:gap-5 justify-center md:scale-115 md:col-span-1 md:col-start-1 lg:scale-120 xl:scale-125">
+        <h2 class="hidden md:block text-[1.25rem] sm:text-[1.5rem] w-[100%] text-center">نظرات شما</h2>
+        <div class="flex gap-10">
+          <div class="button-prev text-[1.5rem]">
+            <i class="fa-light fa-arrow-right"></i>
+          </div>
+          <div class="button-next text-[1.5rem]">
+            <i class="fa-light fa-arrow-left"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class=" bg-slate-500" dir="rtl">
+        <div class="container mx-auto flex flex-col md:flex-row md:justify-between lg:justify-around gap-10  px-4 py-12">
+          <div class="price-card flex flex-col px-5 py-2 bg-gray-50 rounded-lg hover:scale-[.96] transition-all duration-[0.75s]">
+            <div class="flex justify-center">
+              <h2 class="text-[1.5rem] text-gray-900 py-[1rem]">یک ماهه</h2>
+              <hr>
+            </div>
+            <div class="grid grid-cols-3 gap-5 mt-5">
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800">قابلیت اتصال به چندین دستگاه</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800">قابلیت گزارش‌نویسی</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800">خروجی گزارشات</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800">تمامی نماد ها</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800">قابلیت اتصال به چندین دستگاه</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800">قابلیت گزارش‌نویسی</h2>
+              <div class="col-span-1 flex justify-end items-center text-red-400 text-[1.5rem]"><i class="fa-regular fa-xmark"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800">خروجی گزارشات</h2>
+              <div class="col-span-1 flex justify-end items-center text-red-400 text-[1.5rem]"><i class="fa-regular fa-xmark"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800">تمامی نماد ها</h2>
+              <div class="col-span-1 flex justify-end items-center text-red-400 text-[1.5rem]"><i class="fa-regular fa-xmark"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800">ساخت ژورنال نامحدود</h2>
+              <div class="col-span-1 flex justify-end items-center text-red-400 text-[1.5rem]"><i class="fa-regular fa-xmark"></i></div>
+            </div>
+            <a href="#" class="bg-green-500 px-5 py-3.5 mt-10 flex justify-center items-center text-white text-[1.2rem] rounded-lg hover:bg-green-700">خرید پلن</a>
+          </div>
+          <div class="price-card flex flex-col px-5 py-2 bg-gray-50 rounded-lg hover:scale-[.96] transition-all duration-[0.75s]">
+            <div class="flex justify-center">
+              <h2 class="text-[1.5rem] text-amber-500 py-[1rem]">سه ماهه</h2>
+              <hr>
+            </div>
+            <div class="grid grid-cols-3 gap-5 mt-5">
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800 stroke-slate-400">قابلیت اتصال به چندین دستگاه</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800 stroke-slate-400 stroke-1">قابلیت گزارش‌نویسی</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800 stroke-slate-400 stroke-1">خروجی گزارشات</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800 stroke-slate-400 stroke-1">تمامی نماد ها</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800 stroke-slate-400 stroke-1">قابلیت اتصال به چندین دستگاه</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800 stroke-slate-400 stroke-1">قابلیت گزارش‌نویسی</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800 stroke-slate-400 stroke-1">خروجی گزارشات</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800 stroke-slate-400 stroke-1">تمامی نماد ها</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+              <h2 class="col-span-2 flex justify-start items-start text-slate-800 stroke-slate-400 stroke-1">ساخت ژورنال نامحدود</h2>
+              <div class="col-span-1 flex justify-end items-center text-green-500 text-[1.5rem]"><i class="fa-regular fa-check"></i></div>
+            </div>
+            <a href="#" class="bg-green-500 px-5 py-3.5 mt-10 flex justify-center items-center text-white text-[1.2rem] rounded-lg hover:bg-green-700">خرید پلن</a>
+          </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto  flex flex-col gap-10 px-[1rem] py-[1.5rem]" dir="rtl">
+      <div>
+        <div class="flex justify-between">
+          <h2 class="text-[1.25rem] sm:text-[1.5rem]">اخبار</h2>
+          <div class="flex gap-2 items-center justify-between">
+            <a href="" class="text-blue-600 cursor-pointer">همه اخبار</a>
+            <i class="text-blue-600 fa-light fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="swiper mySwiper2 container mx-auto " dir="rtl">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide2 container mx-auto bg-slate-800 rounded-md hover:scale-[.5] transition-all duration-75">
+            <img src="./public/images/news.jpg" alt="news" class="w-[100%] h-[13rem] rounded-t-md">
+            <div class="px-[1rem] flex flex-col gap-5">
+              <h2>تایتل خبر....!</h2>
+              <p class="line-clamp-4 font-thin text-[1.25rem] text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+          
+            </div>  
+          </div>
+          <div class="swiper-slide swiper-slide2 container mx-auto bg-slate-800 rounded-md hover:scale-[.5] transition-all duration-75">
+            <img src="./public/images/news.jpg" alt="news" class="w-[100%] h-[13rem] rounded-t-md">
+            <div class="px-[1rem] flex flex-col gap-5">
+              <h2>تایتل خبر....!</h2>
+              <p class="line-clamp-4 font-thin text-[1.25rem] text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+          
+            </div>  
+          </div>
+          <div class="swiper-slide swiper-slide2 container mx-auto bg-slate-800 rounded-md hover:scale-[.5] transition-all duration-75">
+            <img src="./public/images/news.jpg" alt="news" class="w-[100%] h-[13rem] rounded-t-md">
+            <div class="px-[1rem] flex flex-col gap-5">
+              <h2>تایتل خبر....!</h2>
+              <p class="line-clamp-4 font-thin text-[1.25rem] text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+          
+            </div>  
+          </div>
+          <div class="swiper-slide swiper-slide2 container mx-auto bg-slate-800 rounded-md hover:scale-[.5] transition-all duration-75">
+            <img src="./public/images/news.jpg" alt="news" class="w-[100%] h-[13rem] rounded-t-md">
+            <div class="px-[1rem] flex flex-col gap-5">
+              <h2>تایتل خبر....!</h2>
+              <p class="line-clamp-4 font-thin text-[1.25rem] text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+          
+            </div>  
+          </div>
+          <div class="swiper-slide swiper-slide2 container mx-auto bg-slate-800 rounded-md hover:scale-[.5] transition-all duration-75">
+            <img src="./public/images/news.jpg" alt="news" class="w-[100%] h-[13rem] rounded-t-md">
+            <div class="px-[1rem] flex flex-col gap-5">
+              <h2>تایتل خبر....!</h2>
+              <p class="line-clamp-4 font-thin text-[1.25rem] text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+          
+            </div>  
+          </div>
+          <div class="swiper-slide swiper-slide2 container mx-auto bg-slate-800 rounded-md hover:scale-[.5] transition-all duration-75">
+            <img src="./public/images/news.jpg" alt="news" class="w-[100%] h-[13rem] rounded-t-md">
+            <div class="px-[1rem] flex flex-col gap-5">
+              <h2>تایتل خبر....!</h2>
+              <p class="line-clamp-4 font-thin text-[1.25rem] text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+          
+            </div>  
+          </div>
+          <div class="swiper-slide swiper-slide2 container mx-auto bg-slate-800 rounded-md hover:scale-[.5] transition-all duration-75">
+            <img src="./public/images/news.jpg" alt="news" class="w-[100%] h-[13rem] rounded-t-md">
+            <div class="px-[1rem] flex flex-col gap-5">
+              <h2>تایتل خبر....!</h2>
+              <p class="line-clamp-4 font-thin text-[1.25rem] text-white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+          
+            </div>  
+          </div>
+        </div>
+        <div class="swiper-pagination" dir="rtl"></div>
+        <div class="!text-gray-300 swiper-button-next"></div>
+        <div class="!text-gray-300 swiper-button-prev"></div>
+      </div>
+    </section>
+    
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
