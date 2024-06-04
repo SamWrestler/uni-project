@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en" class="!overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <style>
+        /* .side-panel-shadow {
+            box-shadow: -74px 0px 28px 39px rgba(0,0,0,0.6) !important;
+        } */
+    </style>
+  </head>
+  <body class="font-iransans box-border overflow-hidden">
+
+        <div class="relative h-screen w-screen" dir="rtl">
+
+            <div class="absolute w-[100%] bg-slate-600 bottom-0" dir="rtl">
+                <ul class="flex items-center text-gray-50">
+                    <li class="flex flex-col gap-1 justify-center items-center hover:bg-gray-500  px-4 py-4  transition-all duration-5 cursor-pointer w-1/4">
+                        <i class="fa-light fa-trademark"></i>
+                        <h2>نماد</h2>
+                    </li>
+                    <li class="flex flex-col gap-1 justify-center items-center hover:bg-gray-500  px-4 py-4  transition-all duration-5 cursor-pointer w-1/4">
+                        <i class="fa-light fa-user"></i>
+                        <h2>پروفایل</h2>
+                    </li>
+                    <li class="flex flex-col gap-1 justify-center items-center hover:bg-gray-500  px-4 py-4  transition-all duration-5 cursor-pointer w-1/4">
+                        <i class="fa-light fa-book"></i>
+                        <h2>ژورنال</h2>
+                    </li>
+                    <li class="flex flex-col gap-1 justify-center items-center hover:bg-gray-500  px-4 py-4  transition-all duration-5 cursor-pointer w-1/4">
+                        <i class="fa-light fa-bars"></i>
+                        <h2>سایر</h2>
+                    </li>
+                </ul>
+            </div>
+        
+            <section class="absolute bg-gray-100 w-[90%] h-screen right-[100%]" dir="rtl">
+                <div class="flex justify-end p-4">
+                    <i class="fa-thin fa-circle-xmark text-[1.5rem]"></i>
+                </div>
+        
+                <div dir="rtl" class="grid grid-cols-2 items-center container mx-auto">
+        
+                        <div class="flex w-[100%] justify-center">
+                            <img src="./public/images/profile.jpg" alt="profile-pic" class="w-[7rem] h-[7rem] rounded-full object-cover drop-shadow-md border-[1px] border-slate-300 col-start-1 flex justify-center ">
+        
+                        </div>
+                        <div class="flex flex-col items-start justify-center row-start-1 col-start-2 ">
+                            <p class="text-gray-400 text-[0.8rem]">تاریخ پیوستن</p>
+                            <p dir="rtl" class="text-[0.8rem]">1 سال پیش</p>
+                        </div>
+                        <div class="flex flex-col w-[100%] p-4 items-center">
+                            <h2 class="text-[1.5rem] font-bold">سامان</h2>
+                            <h2 class="text-[1.5rem] font-light">مختاری</h2>    
+                        </div>
+                </div>
+        
+                <div class="container mx-auto px-4 flex flex-col gap-8">
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-[0.8rem] font-bold">پروفایل</h2>
+                        <div class="bg-green-200 border-[1px] border-green-300 flex items-center cursor-pointer p-4 rounded-2xl justify-between hover:bg-green-300 hover:scale-[0.95] transition-all duration-5">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-light fa-address-card text-[1.2rem]"></i>
+                                <p>تکمیل یا ویرایش اطلاعات</p>
+                            </div>
+                            <i class="fa-light fa-angle-left"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-[0.8rem] font-bold">تنظیمات</h2>
+                        <div class="bg-blue-200 flex items-center border-[1px] border-blue-300  cursor-pointer p-4 rounded-2xl justify-between hover:bg-blue-300 hover:scale-[0.95] transition-all duration-5">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-light fa-gear"></i>
+                                <p>تنظیمات عمومی</p>
+                            </div>
+                            <i class="fa-light fa-angle-left"></i>
+                        </div>
+                        <div class="bg-orange-200 flex items-center border-[1px] border-orange-300  cursor-pointer p-4 rounded-2xl justify-between hover:bg-orange-300 hover:scale-[0.95] transition-all duration-5">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-light fa-lock"></i>
+                                <p>امنیت</p>
+                            </div>
+                            <i class="fa-light fa-angle-left"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 w-[60%]">
+                        <div class="flex items-center border-[1px] cursor-pointer border-red-600 p-4 rounded-2xl justify-between hover:bg-red-500  hover:scale-[0.95] transition-all duration-5">
+                            <div class="flex items-center gap-3 text-red-600 hover:text-gray-50 w-[100%]">
+                                <i class="fa-light fa-arrow-right-from-bracket"></i>
+                                <p>خروج از حساب</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </section>
+    
+            <section class="absolute bg-gray-100 w-[90%] h-screen right-0" >
+                <div class="flex justify-end p-4">
+                    <i class="fa-thin fa-circle-xmark text-[1.5rem]"></i>
+                </div>
+        
+                <div class="container mx-auto px-[1rem]">
+
+                    <div class="">
+                        <h2 class="text-[1.2rem]">ژورنال‌ها</h2>
+                        <hr>
+                    </div>
+
+                </div>
+                
+            </section>
+        </div>
+    
+
+
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
