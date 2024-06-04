@@ -5,11 +5,10 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import './public/js/voiceflow'
 gsap.registerPlugin(ScrollTrigger)
 
 var postToShow = 0;
-console.log(window.innerWidth)
 function displaySize(){
   if (window.innerWidth >= 0){
     postToShow = 1
@@ -35,7 +34,6 @@ var swiper = new Swiper(".mySwiper", {
       },
 });
 displaySize()
-console.log(postToShow)
 var swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: postToShow,
   spaceBetween: 30,

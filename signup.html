@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+  </head>
+  <body class="font-iransans box-border">
+    <section class="h-screen  flex flex-col justify-between lg:grid lg:grid-cols-2" dir="rtl">
+      
+      <div class="container mx-auto h-screen flex px-4 py-4 flex-col justify-between ">
+        <div class="flex flex-col gap-8">
+            <div class="flex flex-col gap-8">
+              <a href=""><i class="fa-sharp fa-light fa-arrow-right text-[1.5rem]"></i></a>
+              <div class="flex flex-col gap-2">
+                <h2 class="font-bold text-[1.5rem] text-gray-900">ساخت حساب کاربری جدید</h2>
+              </div>
+            </div>
+            
+            <form action="" method="" class="flex flex-col gap-4 max-w-[500px] min-w-[300px] items-center  container mx-auto">
+      
+              <div class="flex flex-col gap-3 w-[100%]">
+                <div class="flex flex-col gap-1">
+                  <label for="" class="text-[0.9rem]">ایمیل</label>
+                  <input type="email" class="border-[1px] border-gray-400 hover:scale-[0.98] rounded-xl px-5 py-3 text-[0.8rem] focus:border-[1px] transition-all duration-5 focus:border-gray-700 focus:outline-none" placeholder="ایمیل خود را وارد کنید">
+                </div>
+        
+                <div class="flex flex-col gap-1">
+                    <label for="" class="text-[0.9rem]">نام و نام‌خانوادگی</label>
+                    <input type="email" class="border-[1px] border-gray-400 hover:scale-[0.98] rounded-xl px-5 py-3 text-[0.8rem] focus:border-[1px] transition-all duration-5 focus:border-gray-700 focus:outline-none" placeholder="نام و نام‌خانوادگی خود را وارد کنید">
+                </div>
+    
+                <div class="flex flex-col gap-1">
+                  <label for="" class="text-[0.9rem]">رمزعبور</label>
+                  <input type="password" class="border-[1px] border-gray-400 hover:scale-[0.98] rounded-xl px-5 py-3 text-[0.8rem] focus:border-[1px] transition-all duration-5 focus:border-gray-700 focus:outline-none" placeholder="رمزعبور خود را وارد کنید">
+                </div>
+    
+                <div class="flex flex-col gap-1">
+                    <label for="" class="text-[0.9rem]">تکرار رمزعبور</label>
+                    <input type="password" class="border-[1px] border-gray-400 hover:scale-[0.98] rounded-xl px-5 py-3 text-[0.8rem] focus:border-[1px] transition-all duration-5 focus:border-gray-700 focus:outline-none" placeholder="رمزعبور خود را مجددا وارد کنید">
+                  </div>
+              </div>
+      
+    
+            </form>
+          </div>
+    
+          <div class="flex flex-col gap-2 items-center">
+            <a href="login.html" class="text-blue-700">حساب کاربری دارید؟ وارد شوید</a>
+            <button class="container mx-auto bg-gray-900 hover:scale-[0.95] transition-all duration-25  p-4 rounded-xl text-gray-50 max-w-[500px] min-w-[300px] items-center  container mx-auto">ثبت‌ نام</button>
+          </div>
+    
+      </div>
+
+      <div class="!h-screen hidden lg:block">
+        <img src="./public/images/login.png" alt="" class="h-screen object-cover">
+      </div>
+
+    </section>
+    
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
