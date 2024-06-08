@@ -5,10 +5,29 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { RoughEase } from "gsap/EasePack";
+import { TextPlugin } from "gsap/TextPlugin";
+
 import './public/js/voiceflow'
-gsap.registerPlugin(ScrollTrigger)
+
+gsap.registerPlugin(ScrollTrigger, TextPlugin, RoughEase)
+
+
 
 var postToShow = 0;
+
+const sentences = ["بک‌تست در تایم فریم‌های متفاوت", "گزارش اتوماتیک از معامله شما", "قابل استفاده در دستگاه‌های مختلف", "پشتیبانی قدرتمند"]
+
+var blink = gsap.to('.blink', {opacity: 0, ease: 'power2.inOut', repeat: -1})
+
+var mastertl = gsap.timeline({repeat: -1})
+
+sentences.forEach((sentence) => {
+  var tl = gsap.timeline({repeat: 1, yoyo: true, repeatDelay: 1})
+  tl.to('.changable', {duration:2, text: sentence})
+  mastertl.add(tl)
+})
+
 function displaySize(){
   if (window.innerWidth >= 0){
     postToShow = 1
@@ -62,27 +81,3 @@ button.forEach(element => {
 });
 
 
-const profile_panel = document.querySelector('.profile-panel')
-const journal_panel = document.querySelector('.journal-panel')
-document.querySelector('.profile').addEventListener('click', (e) => {
-  gsap.to('.profile-panel', { left: "10%", duration:0.2, direction:"rtl"})
-  profile_panel.classList.add('side-panel-shadow')
-})
-
-document.querySelector('.close-profile').addEventListener('click', (e) => {
-  gsap.to('.profile-panel', { left: "100%", duration:0.2, direction:"rtl"})
-  profile_panel.classList.remove('side-panel-shadow')
-
-})
-
-document.querySelector('.journal').addEventListener('click', (e) => {
-  gsap.to('.journal-panel', { left: "10%", duration:0.2, direction:"rtl"})
-  profile_panel.classList.add('side-panel-shadow')
-
-})
-
-document.querySelector('.close-journal').addEventListener('click', (e) => {
-  gsap.to('.journal-panel', { left: "100%", duration:0.2, direction:"rtl"})
-  profile_panel.classList.remove('side-panel-shadow')
-
-})
